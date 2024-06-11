@@ -1,0 +1,41 @@
+///ARRAY TRAVERSING AND testing
+///1. make HTML page write basic array
+///2. traversing with loop
+///3. accessing element
+///4. access element with text input and button
+///5. validation check
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array testing</title>
+    <script>
+        let num=[1,89,0,34,21,3,5,7,32,78,45,56,10,7]
+        // for( i=0; i<num.length; i++){
+        //     document.write(`number ${i} is ${num[i]}<br>`)
+        // }
+
+        // let x=4
+        // document.write(num[x])
+
+       
+        function getElement(){
+            let el=document.getElementById('element').value
+            
+            if(el<num.length && typeof parseInt(el)=="number" && el>=0){
+                alert(num[el])
+            }else{
+                alert("invalide number")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text" id="element">
+    <button onclick=getElement()>Get element</button>
+    
+</body>
+</html>
